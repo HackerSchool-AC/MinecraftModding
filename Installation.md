@@ -9,6 +9,8 @@ Java ist sowohl eine Programmiersprache als auch eine sogenannte *Laufzeitumgebu
 Ladet den Installer von folgender Seite herunter:
 <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
 <br><br>
+![JDK Installation 1](jdk-installation-1.png)
+<br><br>
 Bevor ihr hier eine Datei herunterladen könnt, müsst ihr “Accept License Agreement” auswählen. Dann könnt ihr die für euer System entsprechende Installationsdatei herunterladen (normalerweise wird das die 64 bit Version, wie im Bild unten gezeigt, sein).
 <br><br>
 ![JDK Installation 2](jdk-installation-2.png)
