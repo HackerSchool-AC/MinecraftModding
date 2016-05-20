@@ -9,27 +9,27 @@ Java ist sowohl eine Programmiersprache als auch eine sogenannte *Laufzeitumgebu
 Ladet den Installer von folgender Seite herunter:
 <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
 <br><br>
-![JDK Installation 1](jdk-installation-1.png)
+![JDK Installation 1](media/jdk-installation-1.png)
 <br><br>
 Bevor ihr hier eine Datei herunterladen könnt, müsst ihr “Accept License Agreement” auswählen. Dann könnt ihr die für euer System entsprechende Installationsdatei herunterladen (normalerweise wird das die 64 bit Version, wie im Bild unten gezeigt, sein).
 <br><br>
-![JDK Installation 2](jdk-installation-2.png)
+![JDK Installation 2](media/jdk-installation-2.png)
 <br><br>
 Bei der Installation könnt ihr einfach die Standardoptionen übernehmen und immer “Next” oder “Weiter” bestätigen.
 <br><br>
-![JDK Installation 3](jdk-installation-3.png)
+![JDK Installation 3](media/jdk-installation-3.png)
 <br><br>
 Wichtig zu beachten ist außerdem, dass ein paar Einstellungen im System vorzunehmen sind, um sicherzustellen, dass Java richtig funktioniert und von anderen Programmen gefunden wird. Dazu ist eine Systemvariable (Umgebungsvariablen) zu setzen: `JAVA_HOME`
 <br><br>
 Die Umgebungsvariablen könnt ihr unter Windows in der Systemsteuerung anpassen. Dazu wählt ihr `Start > Systemsteuerung > System und Sicherheit > System` aus (mit “Start” ist in diesem Fall die Schaltfläche mit dem Windowssymbol unten links auf dem Desktop gemeint). Hier gibt es nun im Menü auf der linken oberen Seite eine Option namens *Erweiterte Systemeinstellungen*. Über diese gelangt ihr in einen Dialog, der euch das Setzen der oben genannten Variablen ermöglicht. Die folgenden Bilder fassen die Schritte noch einmal kurz zusammen:
 <br><br>
-![JDK Installation 4](jdk-installation-4.png)
+![JDK Installation 4](media/jdk-installation-4.png)
 <br>Systemsteuerungsdialog
 <br><br>
-![JDK Installation 5](jdk-installation-5.jpg)
+![JDK Installation 5](media/jdk-installation-5.jpg)
 <br>Erweiterte Systemeigenschaften
 <br><br>
-![JDK Installation 6](jdk-installation-6.jpg)
+![JDK Installation 6](media/jdk-installation-6.jpg)
 <br>Hier können jetzt die Variablen gesetzt werden
 <br><br>
 Wichtig zu beachten ist hier, dass es zwei Möglichkeiten gibt Umgebungsvariablen zu setzen. Wenn ihr auf die obere Schaltfläche, die mit neu beschriftet ist, klickt, dann legt ihr eine neue Umgebungsvariable für den aktuellen Benutzer an. Die untere Schaltfläche mit der Aufschrift *Neu...* ermöglicht es euch, allgemeine Variablen, die für alle Benutzer des Systems gelten, anzulegen. Wir werden im Folgenden die untere Schaltfläche verwenden, was voraussetzt, dass ihr Administratorrechte habt. Alternativ könnt ihr auch eine Variable nur für euren Benutzer setzten.
@@ -40,7 +40,7 @@ Nun kommen wir zum Setzen der Variablen `JAVA_HOME`. Diese sagt dem System und a
 <br><br>
 **TIPP:** Um Arbeit zu sparen, könnt ihr einfach mit der Maus in den Java-Ordner wechseln und dann den Dateipfad aus der Adresszeile (oben unter dem Menü) kopieren. Dann müsst ihr nicht alles tippen und seid sicher, dass der Pfad auch stimmt.
 <br><br>
-![JDK Installation 7](jdk-installation-7.jpg)
+![JDK Installation 7](media/jdk-installation-7.jpg)
 <br>Java Installationsverzeichnis angeben
 <br><br>
 Bestätigt nun den Dialog mit *Ok*. Damit ist die Variable gesetzt und ihr könnt die Systemsteuerung schließen.
@@ -57,11 +57,11 @@ Ladet also nun IntelliJ von der JetBrains-Webseite herunter. Der Link lautet wie
 <br><br>
 Wichtig ist, dass ihr die *Community Edition* herunterladet. Der folgende Screenshot zeigt wo ihr klicken müsst:
 <br><br>
-![IntelliJ Installation 1](intellij-installation-1.jpg)
+![IntelliJ Installation 1](media/intellij-installation-1.jpg)
 <br><br>
 Sobald ihr IntelliJ heruntergeladen habt, könnt ihr die Datei per Doppelklick installieren. Die meisten Optionen könnt ihr auf den Standardeinstellungen belassen. Solltet ihr eine Desktopverknüpfung anlegen wollen, dann ist das während der Installation möglich. Achtet dabei darauf, dass ihr eine Verknüpfung zur 64bit Version von IntelliJ anlegt, da ihr dann mehr Speicher nutzen könnt. Das ist wichtig, denn Java Programme benötigen oft relativ viel Arbeitsstpeicher. Um die erwähnte 64bit Verknüpfung zu erstellen müsst ihr nichts weiter tun als einen Haken an die richtige Option zu setzen. Der folgende Screenshot zeigt, wo ihr diese Option genau findet:
 <br><br>
-![IntelliJ Installation 2](intellij-installation-2.jpg)
+![IntelliJ Installation 2](media/intellij-installation-2.jpg)
 <br><br>
 Die restlichen Optionen können alle auf den Standardeinstellungen belassen werden. Sobald das Setup abgeschlossen ist, habt ihr eure Entwicklungsumgebung installiert.
 <br><br>
@@ -77,35 +77,35 @@ Wir verwenden Forge 1.8.9 für unsere Projekte. Der direkte Downloadlink hierzu 
 <br><br>
 Forge muss nicht installiert, sondern nur entpackt werden. Legt euch am Besten ein Verzeichnis für das Modding an und entpackt die Zip-Datei hier. Dann habt ihr es fast geschafft. Um Mods bauen zu können müsst ihr allerdings erst noch Forge einmal bauen. Das geht ganz einfach über die Konsole, die wir ja auch schon bei der Java-Installation benutzt haben. Um die Arbeit etwas zu erleichtern, könnt ihr direkt im Verzeichnis, in das ihr Forge entpackt habt ein Konsolenfenster öffnen. Dazu müsst ihr nur Shift gedrückt halten und einmal rechts klicken. Im folgenden Menü wählt ihr nun die Option “Eingabeaufforderung hier öffnen” aus und das schon bekannte schwarze Konsolenfenster öffnet sich. Hier gebt ihr nun “gradlew setupDecompWorkspace” (wieder ohne Anführungszeichen) ein und bestätigt mit enter. Nun wird euer Rechner eine Weile beschäftigt sein. Wenn alles fertig ist, dann solltet ihr folgendes Bild sehen:
 <br><br>
-![Forge 1](forge-01.jpg)
+![Forge 1](media/forge-01.jpg)
 <br><br>
 Nun müsst ihr nur noch das Forge-Projekt in IntelliJ öffnen. Die folgenden Screenshots zeigen wie das geht:
 <br><br>
-![Forge 2](forge-02.jpg)
+![Forge 2](media/forge-02.jpg)
 <br>Wählt hier *Import Project aus*
 <br><br>
-![Forge 3](forge-03.jpg)
+![Forge 3](media/forge-03.jpg)
 <br>Öffnet den Ordner, in dem ihr Forge entpackt habt
 <br><br>
-![Forge 4](forge-04.jpg)
+![Forge 4](media/forge-04.jpg)
 <br>Wählt hier *Import project from external Model* und markiert *Gradle*
 <br><br>
-![Forge 5](forge-05.jpg)
+![Forge 5](media/forge-05.jpg)
 <br>Übernehmt hier die Standardoptionen, wie im Bild gezeigt
 <br><br>
-![Forge 6](forge-06.jpg)
+![Forge 6](media/forge-06.jpg)
 <br>Eventuell müsst ihr nun noch Java konfigurieren. Klickt dazu auf *Setup JDK*
 <br><br>
-![Forge 7](forge-07.jpg)
+![Forge 7](media/forge-07.jpg)
 <br>Hier klickt ihr nun auf *Configure...*
 <br><br>
-![Forge 8](forge-08.jpg)
+![Forge 8](media/forge-08.jpg)
 <br>Klickt auf das Plus und dann *JDK*
 <br><br>
-![Forge 9](forge-09.jpg)
+![Forge 9](media/forge-09.jpg)
 <br>Wählt euer Java-Verzeichnis aus
 <br><br>
-![Forge 10](forge-10.jpg)
+![Forge 10](media/forge-10.jpg)
 <br>Wenn alles funktioiniert hat, solltet ihr nun folgendes sehen
 
 Das wars! Jetzt ist alles für das Modden vorbereitet. Wie das genau geht erfahrt ihr im Kurs. Viel Spaß!
