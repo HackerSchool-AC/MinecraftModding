@@ -1,0 +1,16 @@
+[
+{
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Ben", "Ben"],
+  "credits": "The Hacker School Aachen.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
